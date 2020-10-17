@@ -2,7 +2,7 @@ module.exports = grunt => {
   grunt.initConfig({
     connect: {
       server:{
-        options: {        
+        options: {  
           open: true,
           hostname: "127.0.0.1",
           port: 8080
@@ -13,7 +13,7 @@ module.exports = grunt => {
     // Livereload is setup for the 35729 port by default    
     watch: {
       options: {
-        interval: 1000,
+        interval: 0,
         dateFormat: function(time) {
           // grunt.log.writeln('Completed in ' + time + 'ms at' + (new Date()).toString())
           grunt.log.writeln('Ready.'["blue"].bold)
@@ -33,7 +33,7 @@ module.exports = grunt => {
       },
       css: {
         files: ["**/*.css",  "!node_modules/*.*"],
-        options: { livereload: false }
+        options: { livereload: true }
       },
       img: {
         files: ["**/*.jpg", "**/*.jpeg", "**/*.png", "!node_modules/*.*"],
