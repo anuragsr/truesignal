@@ -2,5 +2,6 @@
 /node_modules
 
 #misc
+.idea
 /extra
 vs.code-workspace
