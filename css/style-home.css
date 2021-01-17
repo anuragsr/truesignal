@@ -2,6 +2,11 @@ footer {
   width: 100%;
 }
 
+main section.section0 form button:before {
+  height: 100%;
+  width: 100%;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -16,6 +21,7 @@ html, body {
 body {
   overflow: hidden;
   font-family: "Poppins";
+  background: #FCFCFC;
 }
 @media (min-width: 551px) {
   body {
@@ -37,12 +43,19 @@ body {
   }
 }
 
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .txt-lt {
   color: #848584;
 }
 
-input:focus {
-  outline: none;
+@media (min-width: 551px) {
+  .wrap-md {
+    width: 85%;
+  }
 }
 
 .navbar {
@@ -93,6 +106,82 @@ main {
 main section {
   padding: 70px 0;
   color: #1B1B1B;
+}
+main section.section0 .title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 1px;
+}
+main section.section0 .title .circled {
+  display: inline-block;
+  color: #2998FF;
+}
+main section.section0 .subtitle {
+  color: #848584;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+main section.section0 form {
+  margin-top: 60px;
+}
+main section.section0 form input {
+  border-radius: 12px;
+  padding: 20px 24px;
+  border: 2px solid #D6D8E7;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: rgba(132, 133, 132, 0.7);
+}
+main section.section0 form input::-webkit-input-placeholder {
+  color: rgba(132, 133, 132, 0.7) !important;
+  opacity: 1 !important;
+}
+main section.section0 form input:-moz-placeholder {
+  color: rgba(132, 133, 132, 0.7) !important;
+  opacity: 1 !important;
+}
+main section.section0 form input::-moz-placeholder {
+  color: rgba(132, 133, 132, 0.7) !important;
+  opacity: 1 !important;
+}
+main section.section0 form input:-ms-input-placeholder {
+  color: rgba(132, 133, 132, 0.7) !important;
+  opacity: 1 !important;
+}
+main section.section0 form input:focus {
+  color: rgba(132, 133, 132, 0.7);
+  border-color: #D6D8E7;
+}
+main section.section0 form button {
+  margin-top: 25px;
+  width: 219px;
+  height: 48px;
+  position: relative;
+  left: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #2998FF;
+  background: #FCFCFC;
+  border-radius: 6px;
+  border: 2px solid #2998FF;
+  cursor: pointer;
+}
+main section.section0 form button:hover {
+  background: #f2f3f7;
+}
+main section.section0 form button:before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  background: #2998FF;
+  border-radius: 6px;
+  z-index: -1;
 }
 
 @media (min-width: 769px) {

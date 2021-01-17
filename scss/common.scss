@@ -2,6 +2,7 @@ html, body{ height:  100%; width: 100%; }
 body {
   overflow: hidden;
   font-family: $pop;
+  background: $ow;
   @include media('>mob') {
     display: flex;
     flex-direction: column;
@@ -16,6 +17,13 @@ body {
 .desktop-only{
 	@include media('<=mob') { display: none; }
 }
+input:focus{
+  outline: none!important;
+  box-shadow: none!important;
+}
 
 .txt-lt{ color: $eb-l; }
-input:focus{ outline: none; }
+.wrap-md{
+  @include media('>mob') { width: 85%; }
+}
+

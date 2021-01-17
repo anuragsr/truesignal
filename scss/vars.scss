@@ -98,3 +98,23 @@ $breakpoints: (
   -o-#{$property}: #{$value};  /* Opera */
   #{$property}: #{$value};    /* Non-prefixed version */
 }
+
+// Placeholder color mixin
+@mixin plh($color) {
+  &::-webkit-input-placeholder {
+    color: #{$color}!important;
+    opacity: 1!important;
+  }
+  &:-moz-placeholder {
+    color: #{$color}!important;
+    opacity: 1!important;
+  }
+  &::-moz-placeholder {
+    color: #{$color}!important;
+    opacity: 1!important;
+  }
+  &:-ms-input-placeholder {
+    color: #{$color}!important;
+    opacity: 1!important;
+  }
+}

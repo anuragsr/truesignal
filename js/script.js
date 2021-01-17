@@ -10,4 +10,11 @@ $(() => {
       $(".preload").fadeOut()      
     }
   })
+
+  $("#main-form").on({
+    submit: e => {
+      e.preventDefault()
+      l($(e.target).serializeArray())
+    }
+  })
 })
