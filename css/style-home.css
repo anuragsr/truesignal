@@ -116,6 +116,10 @@ main section.section0 .title {
 main section.section0 .title .circled {
   display: inline-block;
   color: #2998FF;
+  background: url(../img/circled.svg) no-repeat center;
+  background-size: 99%;
+  padding: 20px;
+  margin-left: -20px;
 }
 main section.section0 .subtitle {
   color: #848584;
