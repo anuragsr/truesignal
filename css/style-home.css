@@ -1,12 +1,28 @@
 footer {
+  width: 100%;
+}
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   overflow: hidden;
   font-family: "Poppins";
+}
+@media (min-width: 551px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 551px) {
@@ -21,48 +37,98 @@ body {
   }
 }
 
+.txt-lt {
+  color: #848584;
+}
+
 input:focus {
   outline: none;
 }
 
 .navbar {
   padding-top: 40px;
-  background: #fff;
+}
+.navbar a {
+  color: #1B1B1B;
 }
 .navbar .navbar-brand {
-  display: flex;
-}
-.navbar .navbar-brand img {
-  height: 58px;
-}
-.navbar .navbar-brand .ctn-heading {
-  margin-left: 22px;
-}
-.navbar .navbar-brand .ctn-heading .title {
   font-size: 24px;
+  font-weight: 600;
   line-height: 36px;
-  color: #005450;
+  letter-spacing: 2px;
 }
-.navbar .navbar-brand .ctn-heading .sub-title {
-  font-size: 14px;
-  line-height: 21px;
-  color: #333;
+.navbar .navbar-nav .nav-link {
+  padding: 0;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-nav a {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  padding: 0;
+}
+.navbar .navbar-nav a:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background: #88C6FF;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+.navbar .navbar-nav a:hover:before {
+  transform: scaleX(1);
 }
 
 main {
-  margin-top: 140px;
-  height: 60vh;
+  flex-grow: 1;
 }
 main section {
   padding: 70px 0;
-  text-align: center;
-  color: #777;
+  color: #1B1B1B;
 }
 
-footer {
-  height: 60px;
-  width: 100%;
-  background: #0ef;
+@media (min-width: 769px) {
+  footer {
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 25px;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer-left, footer .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+  }
+}
+footer .footer-left a, footer .footer-right a {
+  margin: 0 40px;
+  color: #1B1B1B;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+@media (max-width: 768px) {
+  footer .footer-left a, footer .footer-right a {
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=style-home.css.map */

@@ -1,20 +1,38 @@
 .navbar{
   padding-top: 40px;
-  background: $w;
+  a{ color: $eb;}
   .navbar-brand{
-    display: flex;
-    img{ height: 58px; }
-    .ctn-heading{
-      margin-left: 22px;
-      .title{
-        font-size: 24px;
-        line-height: 36px;
-        color: $pr; 
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 2px;
+  }
+  .navbar-nav{
+    .nav-link{
+      padding: 0;
+      margin: 0 .5rem;
+    }
+    a{
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      position: relative;
+      padding: 0;
+      &:before{
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: 1px; left: 0;
+        height: 10px; width: 100%;
+        background: $hl;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform .3s;
       }
-      .sub-title{
-        font-size: 14px;
-        line-height: 21px;
-        color: $sc; 
+      &:hover{
+        &:before{ transform: scaleX(1); }
       }
     }
   }

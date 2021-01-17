@@ -1,7 +1,12 @@
-body { 
+html, body{ height:  100%; width: 100%; }
+body {
   overflow: hidden;
   font-family: $pop;
-  // background: black;
+  @include media('>mob') {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .mobile-only{
@@ -12,4 +17,5 @@ body {
 	@include media('<=mob') { display: none; }
 }
 
+.txt-lt{ color: $eb-l; }
 input:focus{ outline: none; }
