@@ -2,12 +2,12 @@ $b: #000;
 $w: #fff;
 $tr: transparent;
 
-$eb: #1B1B1B;
+$eb:   #1B1B1B;
 $eb-l: #848584;
-$ow: #FCFCFC;
-$bl: #2998FF;
-$lb: #D6D8E7;
-$hl: #88C6FF;
+$ow:   #FCFCFC;
+$bl:   #2998FF;
+$lb:   #D6D8E7;
+$hl:   #88C6FF;
 
 $full: 100%;
 
@@ -15,7 +15,7 @@ $breakpoints: (
   'mob-sm': 380px,
   'mob': 550px,
   'tab': 768px,
-  'vsd': 1024px,
+  'vsd': 992px,
   'sd': 1200px,
   'lp': 1366px,
   'md': 1500px,

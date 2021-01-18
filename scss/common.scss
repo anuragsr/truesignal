@@ -1,9 +1,9 @@
 html, body{ height:  100%; width: 100%; }
 body {
-  overflow: hidden;
   font-family: $pop;
   background: $ow;
-  @include media('>mob') {
+  @include media('>vsd') {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,8 +22,9 @@ input:focus{
   box-shadow: none!important;
 }
 
+.txt-bl{ color: $bl; }
 .txt-lt{ color: $eb-l; }
 .wrap-md{
-  @include media('>mob') { width: 85%; }
+  @include media('>vsd') { width: 85%; }
 }
 
